@@ -1,0 +1,88 @@
+body {
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+.tablink {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+
+#London {
+    background: #D31027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D31027, #EA384D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D31027, #EA384D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+#Paris {
+    background: #093028;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #237A57, #093028);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #237A57, #093028);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#Tokyo {
+    background: #41295a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#Oslo {
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.tabs {
+    margin: 2em;
+    text-align: center;
+}
+
+.tab1 {
+    font-size: 30px;
+}
+
+.tab2 {
+    font-size: 20px;
+}

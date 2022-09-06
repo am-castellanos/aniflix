@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/gstyle.css">
+
+  <title>Aniflix</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <video src="images/Aniflix.mp4" width="80px" height="40px" autoplay loop></video>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="tabs">
+    <h2>Elige tu experiencia Aniflix</h2>
+    <p>Disfruta de tus peliculas y series anime favoritas</p>
+  </div>
+
+  <div id="London" class="tabcontent">
+    <h1>Forever Alone</h1>
+    <p class="tab1"><b>Free</b></p>
+    <div class="listgroup">
+      <ul class="list-group list-group-flush" role="list" tabindex="1px">
+        <li class="list-group-item">Conecta hasta 2 dispositivos</li>
+        <li class="list-group-item">Acceso a contenido seleccionado</li>
+        <li class="list-group-item">Calidad Full HD</li>
+        <li class="list-group-item">Usa anuncios para acceder al contenido</li>
+      </ul>
+    </div>
+    <button type="button" class="btn btn-dark" style="margin-top: 2em;">Elegir Plan</button>
+  </div>
+
+  <div id="Paris" class="tabcontent">
+    <h1>Forever Alone Premiun</h1>
+    <p class="tab1"><b>4.00 USD</b> / mes</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Conecta hasta 3 dispositivos</li>
+      <li class="list-group-item">Disfruta del contenido sin anuncios</li>
+      <li class="list-group-item">Calidad Full HD</li>
+      <li class="list-group-item">Acceso a contenido Exclusivo</li>
+    </ul>
+    <button type="button" class="btn btn-dark" style="margin-top: 2em;">Elegir Plan</button>
+  </div>
+
+  <div id="Tokyo" class="tabcontent">
+    <h1>Otaku Couple</h1>
+    <p class="tab1"><b>6.00 USD</b> / mes</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Conecta hasta 4 dispositivos</li>
+      <li class="list-group-item">Disfruta del contenido sin anuncios</li>
+      <li class="list-group-item">Calidad Full HD</li>
+      <li class="list-group-item">Acceso a contenido Exclusivo</li>
+    </ul>
+    <button type="button" class="btn btn-dark" style="margin-top: 2em;">Elegir Plan</button>
+  </div>
+
+  <div id="Oslo" class="tabcontent">
+    <h1>Otaku Family</h1>
+    <p class="tab1"><b>8.00 USD</b> / mes</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Conecta hasta 5 dispositivos</li>
+      <li class="list-group-item">Disfruta del contenido sin anuncios</li>
+      <li class="list-group-item">Calidad Full HD</li>
+      <li class="list-group-item">Acceso a contenido Exclusivo</li>
+    </ul>
+    <button type="button" class="btn btn-dark" style="margin-top: 2em;">Elegir Plan</button>
+  </div>
+
+  <button class="tablink" onclick="openCity('London', this, '#D31027')" id="defaultOpen">Forever Alone</button>
+  <button class="tablink" onclick="openCity('Paris', this, '#093028')">Forever Alone Premiun</button>
+  <button class="tablink" onclick="openCity('Tokyo', this, '#41295a')">Otaku Couple</button>
+  <button class="tablink" onclick="openCity('Oslo', this, '#232526')">Otaku Family</button>
+
+  <script>
+    function openCity(cityName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(cityName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</html>

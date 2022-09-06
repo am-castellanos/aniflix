@@ -1,0 +1,33 @@
+body {
+    background: black;
+    color: aliceblue;
+}
+
+.cardtext {
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+.carousel {
+    width: 100%;
+    display: flex;
+}
+
+
+footer {
+    background: #1a1919;
+}
+
+.cardtextfooter {
+    text-align: center;
+}
+
+.subtitulo {
+    display: inline-block;
+    background-color: #000;
+    width: 75%;
+
+}
